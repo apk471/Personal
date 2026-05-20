@@ -1,0 +1,257 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,itemsep=1pt,parsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ayush Amin} \\ \vspace{1pt}
+    \small +91 6301421414 $|$ \href{mailto:ayushnamin@gmail.com}{\underline{ayushnamin@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ayush-amin/}{\underline{linkedin.com/in/ayush-amin/}} $|$
+    \href{https://github.com/apk471}{\underline{github.com/apk417}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute Of Technology}{Vellore, India}
+      {Bachelor of Technology in Computer Science - \textbf{90.1\%}}{Sep. 2022 -- July 2026}    
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical Skills}{: Golang, Python, JavaScript, TypeScript, Backend Development, Distributed Systems, REST APIs, System Design, Concurrency, Caching (Redis), Search Systems (Elasticsearch), Docker, MongoDB, SQL} \\
+     
+     \textbf{AI \& LLM Systems}{: RAG Pipelines, Agentic AI Workflows, Prompt Engineering, LLM Orchestration, Vector Databases (ChromaDB/FAISS), Embeddings, Context Management, Evaluation \& Retrieval Optimization} \\
+     
+     \textbf{Frameworks}{: Go (net/http, goroutines, channels), Gin, Fiber, Echo, FastAPI, Node.js, Next.js, LangChain, LangGraph} \\
+     
+     % \textbf{Developer Tools}{: Git, Docker, AWS, Linux CLI, Postman, MongoDB Compass, Redis, Elasticsearch} \\
+     
+     \textbf{Soft Skills}{: Problem-solving, Time Management, Communication, Teamwork, Decision Making}
+    }}
+    \end{itemize}
+
+
+%-------------------------------------------
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+%   \resumeSubheading
+%       {MyFi by TIFIN}{Dec 2025 -- Present}
+%       {SWE FTE}{Bangalore, India}
+%       \resumeItemListStart
+%         \resumeItem{Built a RAG-based insurance policy analysis pipeline using GPT-4o-mini vision, enabling real-time Q\&A over PDFs and reducing manual review effort by \textbf{60\%}}
+%         \resumeItem{Designed a policy evaluation engine benchmarking \textbf{26 parameters} across 6 categories, generating \textbf{100-point graded reports} (A–F) and improving decision speed by \textbf{40\%}}
+%         \resumeItem{Engineered an asynchronous document pipeline with incremental extraction, enabling real-time querying of partially processed documents and improving throughput by \textbf{50\%}}
+        
+%         \resumeItem{Developed a real-time deployment tracking system using GitHub webhooks with HMAC verification and Redis caching, reducing MongoDB read load by \textbf{60\%}}
+%         \resumeItem{Built an Elasticsearch-based search platform with semantic + boolean filtering, enabling \textbf{90\%} of user-facing financial screening workflows}
+%         \resumeItem{Implemented zero-downtime systems including A/B index switching and deployment alerting, improving reliability and deployment safety by \textbf{40\%}}
+%       \resumeItemListEnd
+
+%     \resumeSubheading
+%       {Accenture}{May 2025 -- July 2025}
+%       {Advanced App Engineering Analyst}{Hyderabad, India}
+%       \resumeItemListStart
+%         \resumeItem{Connected backend services with testing frameworks to ensure \textbf{99\%} system reliability and seamless performance across environments}
+%         \resumeItem{Executed end-to-end testing, diagnosing and resolving critical bugs prior to deployment, elevating release quality}
+%         \resumeItem{Engineered and optimized a new feature using Next.js 15 with Partial Pre-rendering (PPR), cutting page load time by \textbf{35\%} and enhancing experience}
+%         \resumeItem{Deployed Google Cloud Platform (GCP) services and successfully launched the application on GCP, boosting scalability and deployment efficiency}
+%         \resumeItem{Authored comprehensive technical and functional documentation, serving as the final project delivery to Google’s development and QA teams}
+%       \resumeItemListEnd
+            
+% % -----------Multiple Positions Heading-----------
+% %    \resumeSubSubheading
+% %     {Software Engineer I}{Oct 2014 - Sep 2016}
+% %     \resumeItemListStart
+% %        \resumeItem{Apache Beam}
+% %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+% %     \resumeItemListEnd
+% %    \resumeSubHeadingListEnd
+% %-------------------------------------------
+%     \resumeSubheading
+%       {Pyro Holdings Pvt Ltd}{May 2024 -- July 2024}
+%       {SDE Intern}{Hyderabad, India}
+%       \resumeItemListStart
+%         \resumeItem{Developed a Retrieval-Augmented Generation (RAG) application, enabling intelligent customer interactions powered by Generative AI}
+%         \resumeItem{Rolled out the RAG-based chatbot for customer service, trimming human resource dependency by \textbf{25\%} and elevating query resolution efficiency}
+%         \resumeItem{Explored and applied advanced Generative AI techniques, gaining hands-on expertise in RAG pipelines, knowledge retrieval, and LLM optimization}
+%         \resumeItem{Embedded the chatbot as a Q\&A assistant across company websites, boosting customer engagement and self-service capabilities}
+%     \resumeItemListEnd
+\resumeSubheading
+      {TIFIN}{May 2026 -- Present}
+      {Software Engineer FTE}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Built and fine-tuned the organization’s core financial LLM powering \textbf{100\%} of B2B and B2C AI workflows across production services}
+        
+        \resumeItem{Developed an AI-powered Slack agent integrated with GitHub, Linear, GCS, and Codemagic MCPs, automating PR reviews, deployments, build generation, and ticket workflows}
+        
+        \resumeItem{Engineered and deployed GPU health monitoring endpoints for \textbf{L40} and \textbf{H100} clusters with automated failure detection and Slack-based alerting, reducing downtime response latency by \textbf{65\%}}
+        
+        \resumeItem{Designed an automated LLM evaluation framework using Google Cloud Scheduler to classify failures into LLM, data, or infrastructure issues with query-level diagnostics and ownership tagging}
+      \resumeItemListEnd
+      
+\resumeSubheading
+      {MyFi by TIFIN}{Dec 2025 -- Present}
+      {Automation \& Developer Intern}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Built a RAG-based insurance policy analysis pipeline using GPT-4o-mini vision, enabling real-time Q\&A over PDFs and reducing manual review effort by \textbf{60\%}}
+        \resumeItem{Engineered an asynchronous document pipeline enabling real-time querying of partially processed documents, improving throughput by \textbf{50\%}}
+        \resumeItem{Developed backend systems with Redis caching and GitHub webhook processing, reducing MongoDB read load by \textbf{60\%} and improving deployment tracking}
+      \resumeItemListEnd
+
+
+\resumeSubheading
+      {Accenture}{May 2025 -- July 2025}
+      {Advanced App Engineering Analyst Intern}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Connected backend services with testing frameworks to ensure \textbf{99\%} system reliability across environments}
+        \resumeItem{Executed end-to-end testing and resolved critical bugs, improving release quality and system stability}
+        \resumeItem{Optimized a Next.js 15 feature with Partial Pre-rendering (PPR), reducing page load time by \textbf{35\%}}
+        \resumeItem{Deployed services on Google Cloud Platform (GCP), improving scalability and deployment efficiency}
+        \resumeItem{Authored technical and functional documentation for final delivery to engineering and QA teams}
+      \resumeItemListEnd
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Real-Time WebSocket System} $|$ \emph{Golang, WebSockets, Concurrency}}{\href{https://github.com/apk471/go-websockets}{GitHub Link}}
+\resumeItemListStart
+\resumeItem{Engineered a real-time communication system using WebSockets in Go, enabling \textbf{100\% persistent bidirectional communication} between clients and server}
+\resumeItem{Scaled concurrent connection handling using goroutines and channels, supporting \textbf{100+ simultaneous clients} with efficient resource utilization}
+\resumeItem{Architected an event-driven messaging system with broadcasting and lifecycle management, improving message delivery efficiency by \textbf{40\%}}
+\resumeItem{Optimized connection handling and message flow, reducing latency by \textbf{30\%} and ensuring reliable session management under load}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{CloudReach.AI} $|$ \emph{Python, RAG, LangChain, Llama3}}{\href{https://github.com/apk471/ColdEmailGenerator}{GitHub} $|$ 
+\href{https://coldreach.streamlit.app/}{Live}}
+\resumeItemListStart
+\resumeItem{Built a RAG-based system to generate personalized cold emails, reducing manual effort by \textbf{70\%}}
+\resumeItem{Designed a retrieval pipeline with chunking, embeddings, and semantic search, improving relevance by \textbf{35\%}}
+\resumeItem{Reduced generation time from \textbf{5 minutes to under 20 seconds} via optimized prompt and context handling}
+\resumeItem{Improved personalization using HuggingFace models, increasing response rates by \textbf{18\%}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+%
+
+\end{document}
