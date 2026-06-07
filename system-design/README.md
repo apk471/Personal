@@ -19,16 +19,13 @@ For a backend developer, the practical meaning is:
 
 ---
 
-## Topics in This Folder
+## Folder Structure
 
-| File | What it covers |
+| Folder | Contents |
 | --- | --- |
-| `stateless-stateful.md` | Stateless vs stateful services, trade-offs, examples |
-| `message-queues.md` | Message queues, Kafka vs RabbitMQ, when to use which |
-| `pub-sub.md` | Publish-subscribe pattern, topics, fan-out, use cases |
-| `high-level-architecture.md` | High-level design: CDN, DNS, load balancers, servers, DB |
-| `workers.md` | Worker pattern in message queues, concurrency, retries |
-| `backend-capacity.md` | Capacity estimation: QPS, bandwidth, storage, cache, DB sizing |
+| `basics/` | Stateless vs stateful, message queues, pub/sub, HLD building blocks, workers |
+| `capacity/` | Backend capacity estimation: QPS, bandwidth, storage, cache, DB sizing |
+| `interview-framework/` | 4-step framework for system design interviews, time division, common questions |
 
 ---
 
@@ -70,4 +67,5 @@ Recommended order for backend devs:
 4. Sketch a high-level architecture with standard building blocks.
 5. Learn the worker pattern for async processing.
 6. Practice capacity estimation calculations.
+7. Learn the interview framework and practice with common questions.
 
